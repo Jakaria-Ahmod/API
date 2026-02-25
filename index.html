@@ -1,20 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>আপনার ব্র্যান্ড | প্রফেশনাল ল্যান্ডিং পেজ</title>
+  
+  <!-- Google Analytics ট্যাগ (এখানে আপনার GA কোড বসবে) -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // আপনার GA ID বসান
+  </script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
 
-  <div class="main">
-    <button id="btn">ক্লিক করলেই ম্যাজিক</button>
-  </div>
+  <!-- নেভিগেশন বার -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-rocket"></i>
+        <span>ব্র্যান্ডনাম</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link"
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'home'});">হোম</a></li>
+        <li><a href="#features" class="nav-link"
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'features'});">ফিচার্স</a>
+        </li>
+        <li><a href="#about" class="nav-link"
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'about'});">সম্পর্কে</a>
+        </li>
+        <li><a href="#contact" class="nav-link"
+            onclick="gtag('event', 'click', {'event_category': 'navigation', 'event_label': 'contact'});">যোগাযোগ</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-  <script src="./js/script.js"></script>
+  <!-- হিরো সেকশন -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate-text">আপনার ব্যবসার জন্য <span class="highlight">সেরা সমাধান</span></h1>
+        <p class="animate-text-delay">আমরা তৈরি করি আধুনিক, দ্রুত ও ইউজার-ফ্রেন্ডলি ওয়েবসাইট যা আপনার ব্যবসাকে নিয়ে
+          যাবে নতুন উচ্চতায়</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary"
+            onclick="gtag('event', 'click', {'event_category': 'hero', 'event_label': 'get_started'});">
+            <i class="fas fa-arrow-right"></i> শুরু করুন
+          </a>
+          <a href="#features" class="btn btn-secondary"
+            onclick="gtag('event', 'click', {'event_category': 'hero', 'event_label': 'learn_more'});">
+            <i class="fas fa-play"></i> আরও জানুন
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          alt="Hero Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ফিচার্স সেকশন -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>আমাদের <span class="highlight">ফিচার্স</span></h2>
+        <p>আমরা যা অফার করি তা আপনাকে প্রতিযোগিতায় এগিয়ে রাখবে</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card"
+          onclick="gtag('event', 'click', {'event_category': 'feature', 'event_label': 'feature_1'});">
+          <div class="feature-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>দ্রুত পারফরম্যান্স</h3>
+          <p>আমাদের সাইটগুলি অত্যন্ত দ্রুত লোড হয়, যা ইউজার এক্সপেরিয়েন্স বাড়ায়</p>
+        </div>
+        <div class="feature-card"
+          onclick="gtag('event', 'click', {'event_category': 'feature', 'event_label': 'feature_2'});">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>মোবাইল ফ্রেন্ডলি</h3>
+          <p>সব ডিভাইসে পারফেক্ট দেখায় - মোবাইল, ট্যাবলেট, ডেস্কটপ</p>
+        </div>
+        <div class="feature-card"
+          onclick="gtag('event', 'click', {'event_category': 'feature', 'event_label': 'feature_3'});">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>সিকিউরিটি</h3>
+          <p>আধুনিক সিকিউরিটি ফিচার যা আপনার ডাটা রাখে সুরক্ষিত</p>
+        </div>
+        <div class="feature-card"
+          onclick="gtag('event', 'click', {'event_category': 'feature', 'event_label': 'feature_4'});">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>SEO অপ্টিমাইজড</h3>
+          <p>গুগলে ভালো র‌্যাংক করার জন্য সম্পূর্ণ অপ্টিমাইজড</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- অ্যাবাউট সেকশন -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>আমাদের <span class="highlight">সম্পর্কে</span></h2>
+          <p>২০১৮ সাল থেকে আমরা ডিজিটাল সমাধান দিয়ে আসছি। আমাদের টিম এক্সপেরিয়েন্সড ডেভেলপার এবং ডিজাইনাররা সর্বদা
+            ক্লায়েন্টের চাহিদা বুঝে সেরা সমাধান দেয়ার চেষ্টা করে।</p>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number" data-target="500">0</span>
+              <span class="stat-label">প্রজেক্ট</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="300">0</span>
+              <span class="stat-label">ক্লায়েন্ট</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="50">0</span>
+              <span class="stat-label">অ্যাওয়ার্ড</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="About Us">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- কন্টাক্ট সেকশন -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>যোগাযোগ <span class="highlight">করুন</span></h2>
+        <p>আপনার প্রয়োজন সম্পর্কে আমাদের জানান</p>
+      </div>
+      <div class="contact-wrapper">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="আপনার নাম" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="ইমেইল ঠিকানা" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="মেসেজ লিখুন..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"
+            onclick="gtag('event', 'submit', {'event_category': 'contact', 'event_label': 'form_submit'});">
+            <i class="fas fa-paper-plane"></i> পাঠান
+          </button>
+        </form>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>ঢাকা, বাংলাদেশ</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+৮৮০ ১৭XX-XXXXXX</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@yourbrand.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ফুটার -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ব্র্যান্ডনাম</h3>
+          <p>আপনার সাফল্যই আমাদের লক্ষ্য</p>
+        </div>
+        <div class="footer-section">
+          <h3>দ্রুত লিংক</h3>
+          <ul>
+            <li><a href="#home">হোম</a></li>
+            <li><a href="#features">ফিচার্স</a></li>
+            <li><a href="#about">সম্পর্কে</a></li>
+            <li><a href="#contact">যোগাযোগ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>ফলো করুন</h3>
+          <div class="social-links">
+            <a href="#" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'facebook'});"><i
+                class="fab fa-facebook"></i></a>
+            <a href="#" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'twitter'});"><i
+                class="fab fa-twitter"></i></a>
+            <a href="#" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'linkedin'});"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="#" onclick="gtag('event', 'click', {'event_category': 'social', 'event_label': 'instagram'});"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; ২০২৪ ব্র্যান্ডনাম। সর্বস্বত্ব সংরক্ষিত।</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
 </body>
-
 </html>
